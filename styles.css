@@ -3,6 +3,7 @@
 body {
     font-family: "Lato", sans-serif;
     margin: 0px;
+    background: white;
 }
 
 .container {
@@ -134,6 +135,18 @@ body {
     padding: 38px;
     justify-content: start;
     color:dimgrey;
+}
+
+.education-logo {
+    display: grid;
+    padding: 54px;
+    grid-template-columns: 1fr 1fr 1fr
+}
+
+.personal-profile-wrapper {
+    display: flex;
+    padding: 38px;
+    color: dimgrey;
 }
 
 .publications-wrapper {
