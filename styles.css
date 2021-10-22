@@ -115,6 +115,9 @@ body {
     padding: 38px;
 }
 
+/* Index page*/
+
+
 /* About page */
 .two-column-wrapper {
     display: grid;
@@ -149,6 +152,20 @@ body {
     color: dimgrey;
 }
 
+.research-project-wrapper {
+    display: flex;
+    padding: 38px;
+    color: dimgrey;
+}
+
+.gpcr-wrapper {
+    display: grid;
+    padding: 54px;
+    grid-template-columns: 1fr 1fr;    
+}
+
+
+
 .publications-wrapper {
     display: flex;
     padding: 38px;
@@ -156,6 +173,12 @@ body {
 }
 
 .contact-wrapper {
+    display: flex;
+    padding: 38px;
+    color: dimgrey;
+}
+
+.reference-wrapper {
     display: flex;
     padding: 38px;
     color: dimgrey;
