@@ -16,6 +16,10 @@
                     <a href="index.html">Home</a>
                 </div>
 
+                <div class="nav-link-wrapper">
+                    <a href="research.html">Research</a>
+                </div>
+
                 <div class="nav-link-wrapper active-nav-link">
                     <a href="about.html">About</a>
                 </div>
@@ -44,7 +48,16 @@
                     I am currently working on using computational methods to study the mechanisms of biological systems and using machine learning to study drug discovery. 
                     I have expertise in molecular dynamics simulations of protein in water and membrane protein in lipid bilayer and machine learning.  <br></p>
 
+                    <div class="personal-profile-wrapper">
+                        <h3>Profile</h3>
+                        <dd>
+                        <p><img src="image/orcid-og-image.png" alt="Ye Zou's ORCID" style="height:16px">&nbsp;<a href="https://orcid.org/0000-0002-3145-9661">https://orcid.org/0000-0002-3145-9661</a><br>
+                        <img src="image/scholar.png" alt="Ye Zou's Google Scholar" style="height: 18px">&nbsp;<a href="https://scholar.google.com/citations?user=Kpccn6cAAAAJ&hl=en">Google Scholar Profile</a></p>
+                        </dd>
+                    </div>
+
                 </div>
+
             </div>
 
             <div class="two-column-wrapper">
@@ -55,7 +68,7 @@
                             <b>Ph.D. candidate, Biochemistry and Molecular Biophysics</b>
                             <dd>Kansas State University, Manhattan, KS<span style="float:right">2021</span></dd>
                             <dd>Advisor: <a href="https://sites.google.com/site/holeungng/home">Prof. Ho Leung Ng</a></dd>
-                            <dd>Thesis: The study of G-protein coupled receptor</dd>    
+                            <dd>Thesis: The new insights from the study of ligands binding with proteins by computional methods</dd>    
                         
                         </li>
                         <li>
@@ -76,28 +89,114 @@
                 </div>
             </div>
 
-            <div class="personal-profile-wrapper">
-                <h3>Profile</h3>
-                <dd>
-                <p><img src="image/orcid-og-image.png" alt="Ye Zou's ORCID" style="height:16px">&nbsp;<a href="https://orcid.org/0000-0002-3145-9661">https://orcid.org/0000-0002-3145-9661</a><br>
-                <img src="image/scholar.png" alt="Ye Zou's Google Scholar" style="height: 18px">&nbsp;<a href="https://scholar.google.com/citations?user=Kpccn6cAAAAJ&hl=en">Google Scholar Profile</a></p>
-                </dd>
+            <div class="research-project-wrapper">
+                <h3>Projects</h3>
+                <ul>
+                    <li><h4>Proctolin and proctolin receptor study</h4></li>
+                    Neuropeptides functon as neurohormones, neurotransmitters or neuromodulators.
+                    Proctolin is one kind of neuropeptide which is a small protein-like molecule. 
+                    It is a pentapeptide, RYLPT, involved in the stimulation of skeltal and visceral muscles contraction.
+                    Most neuropeptide receptors are seven transmembrane-domain, G protein-coupled receptors. 
+                    The proctolin receptor is also a G protein-coupled receptor (GPCR). 
+                    Due to the dynamic properties of GPCRs there are limited crystal structures available and there is no crystal structure of the proctolin receptor.
+                    Here, I used computational methods to reveal the mechanism of binding between proctolin and proctolin receptor.
+
+                    Focus was on using computational methods to study proctolin and proctolin receptor, 
+                    and using the results to design proctolin receptor mutants to investigate the binding mechanism.
+                    <p>(1) Based on the proctolin receptor protein sequence, the homology model was built by GPCR-I-TASSER.</p>
+                    <p>(2) The homology model was used to do docking study by Glide SP.</p>
+                    <p>(3) The preliminary results from Glide SP were used to do inducted fit docking.</p>
+                    <p>(4) The results from induced fit docking matching the experimental results were used to do QM-polarized ligand docking.</p>
+                    <p>(5) The top results were used to run MD simulations to further reveal the binding sites on the proctolin receptor. Then the binding sites were tested in lab.</p>
+                    
+                    <div class="two-column-wrapper">
+                        <div class="skill-wrapper">
+                            <dd><b>Skills</b></dd>
+                            <p><dd><li>homology modeling: GPCR-I-TASSER</li></dd></p>
+                            <p><dd><li>docking: Glide SP, Induced fit docking, QM-polarized ligand docking</li></dd></p>
+                            <p><dd><li>MD simulations: Amber, CHARMM GUI</li></dd></p>
+                            <p><dd><li>results analysis: CPPTRAJ</li></dd></p>
+                        </div>
+                        <div class="gpcr-wrapper">
+                            <img src="image/gpcr.png" style="height: 150px;">
+                            <img src="image/proctolin.png" style="height: 150px;">
+                        </div>
+                        
+                    </div>
+                    
+                    
+                    <li><h4>Red fluorescent protein conformational study</h4></li>
+                    <p>Focus on the study of dynamics of choromphores of fluorescent proteins. </p>
+                    <div class="two-column-wrapper">
+                        <div class="skill-wrapper">
+                            <dd><b>Skills</b></dd>
+                            <p><dd><li>pKa calculation: Jaguar</li></dd></p>
+                            <p><dd><li>MD simulations: Desmond</li></dd></p>
+                            <p><dd><li>Metadynamics simulations: Desmond</li></dd></p>
+                        </div>
+                        <div class="rfp-wrapper">
+                            <img src="image/rfp.png" style="height: 180px;">
+                        </div>
+                        
+                    </div>
+                    <li><h4>Formate dehydrogenase docking study</h4></li>
+                    <li><h4>Ferric-Catecholate simulation study</h4></li>
+                    
+                    <li><h4>ATP4 homology modleing study</h4></li>
+                    <p>This is a small contribution to <a href="http://opensourcemalaria.org">Open Source Malaria (OSM)</a>. Previous OSM used the traditional homology modeling method to build the homology model. 
+                        After the AlphaFold2 came out, we were trying to use the model of AlphaFold2 generated to keep studying ligands docking to ATP4.  </p>
+                    <p><a href="https://github.com/OpenSourceMalaria/Series4_PredictiveModel/files/7079673/YeZou_comparison_summary.pdf">The ATP4 homology models comparison</a></p>
+                    <p><a href="https://github.com/OpenSourceMalaria/Series4_PredictiveModel/issues/35">The discussion of AlphaFold2 model of ATP4</a></p>
+                </ul>
             </div>
 
             <div class="publications-wrapper">
                 <h3>Publications</h3>
                     <ul>
-                        <li>Chingakham Ranjit Singh, M Rebecca Glineburg, Chelsea Moore, Naoki Tani, Rahul Jaiswal, <b>Ye Zou</b>, Eric Aube, Sarah Gillaspie, Mackenzie Thornton, Ariana Cecil, Madelyn Hilgers, Azuma Takasu, Izumi Asano, Masayo Asano, Carlos R Escalante, Akira Nakamura, Peter K Todd, Katsura Asano, <a href="https://www.sciencedirect.com/science/article/pii/S2211124721007749">Human oncoprotein 5MP suppresses general and repeat-associated non-AUG translation via eIF3 by a common mechanism</a>. <i>Cell Reports</i>. 36.2 (2021): 109376.</li>
-                        <li><b>Ye Zou</b>, John Ewalt, Ho-Leung Ng, <a href="https://www.mdpi.com/1422-0067/20/17/4237">Recent Insights from Molecular Dynamics Simulations for G Protein-Coupled Receptor Drug Discovery</a>. <i>International Journal of Molecular Sciences</i>. 20.17 (2019):4237. </li>
-                        <li>Rongbing Yang, Kihoon Nam, Sung Wan Kim, James Turkson, <b>Ye Zou</b>, Yi Y Zuo, Rahul V Haware, Mahavir B Chougule, <a href="https://pubs.acs.org/doi/abs/10.1021/acs.molpharmaceut.6b00861">Factorial design based multivariate modeling and optimization of tunable bioresponsive arginine grafted poly (cystaminebis (carylamide)-diaminohexane) polymeric matrix based nanocarriers</a>. <i>Molecular Pharmaceutics</i> 14.1 (2017): 252-263.</li>
-                        <li>Yachao Gao, <b>Ye Zou</b>, Yan Ma, Dan Wang, Ying Sun, Gang Ma, <a href="https://pubs.acs.org/doi/abs/10.1021/acs.langmuir.5b03616">Infrared probe technique reveals a millipede-like structure for A&beta; (8-28) amyloid fibril</a>. <i>Langmuir</i>. 32.4 (2016): 937-946.</li>
-                        <li>Chikara Otsubo, Sivakama Bharathi, Radha Uppala, Olga R llkayeva, Dongning Wang, Kevin McHugh, <b>Ye Zou</b>, Jieru Wang, John F Alcorn, Yi Y Zuo, Matthew D Hirschey, Eric S Goetzman, <a href="https://www.sciencedirect.com/science/article/pii/S002192582044726X">Long-chain acylcarnitines reduce lung function by inhibiting pulmonary surfactant</a>. <i>Journal of Biological Chemistry</i>. 290.39 (2015): 23897-23904.</li>
-                        <li><b>Ye Zou</b>, Wenying Hao, Haoyi Li, Yachao Gao, Ying Sun, Gang Ma, <a href="https://pubs.acs.org/doi/abs/10.1021/jp504201k">New insight into amyloid fibril formation of hen egg white lysozyme using a two-step temperature-dependent FTIR approach</a>. <i>The Journal of Physical Chemistry B</i>. 118.33 (2014), 9834-9843.</li>
-                        <li><b>Ye Zou</b>, Gang Ma, <a href="https://www.mdpi.com/1422-0067/15/6/10018">A new criterion to evaluate water vapor interference in protein secondary structural analysis by FTIR spectroscopy</a>. <i>International Journal of Molecular Sciences</i>. 15.6 (2014):10018-10033.</li>                            
-                        <li>Ying Sun, <b>Ye Zou</b>, Gang Ma, <a href="https://pubs.acs.org/doi/abs/10.1021/ed300788z">A convenient and cost-effective fourier transform infrared (FTIR) spectrometer purging setup for the undergraduate teaching laboratory</a>. <i>Journal of CHemical Education</i>. 90.7 (2013): 950-951.</li>
-                        <li><b>Ye Zou</b>, Yiyi Li, Wenying Hao, Xiaoqian Hu, Gang Ma, <a href="https://pubs.acs.org/doi/abs/10.1021/jp4003559">Parallel &beta;-sheet oligomer: new insights into amyloid formation of hen egg white lysozyme under heat and acidic condition from FTIR spectroscopy</a>. <i>The Journal of Physical Chemistry B</i>. 117.15 (2013): 4003-4013.</li> 
-                        <li>Gang Ma, Yiyi Li, Jun Dong, <b>Ye Zou</b>, <a href="https://www.sciencedirect.com/science/article/pii/S0924203112001944">The dynamic nature of incubation solution after cooling to room temperature in amyloid formation of hen egg white lysozyme: an FTIR assessment</a>. <i>Vibrational Spectroscopy</i>. 64 (2013):44-50.</li>                                               
+                        <p><li>Chingakham Ranjit Singh, M Rebecca Glineburg, Chelsea Moore, Naoki Tani, Rahul Jaiswal, <b>Ye Zou</b>, Eric Aube, Sarah Gillaspie, Mackenzie Thornton, Ariana Cecil, Madelyn Hilgers, Azuma Takasu, Izumi Asano, Masayo Asano, Carlos R Escalante, Akira Nakamura, Peter K Todd, Katsura Asano, <a href="https://www.sciencedirect.com/science/article/pii/S2211124721007749">Human oncoprotein 5MP suppresses general and repeat-associated non-AUG translation via eIF3 by a common mechanism</a>. <i>Cell Reports</i>. 36(2), 109376.</li></p>
+                        <p><li><b>Ye Zou</b>, John Ewalt, Ho-Leung Ng, <a href="https://www.mdpi.com/1422-0067/20/17/4237">Recent Insights from Molecular Dynamics Simulations for G Protein-Coupled Receptor Drug Discovery</a>. <i>International Journal of Molecular Sciences</i>. 20.17 (2019):4237. </li></p>
+                        <p><li>Rongbing Yang, Kihoon Nam, Sung Wan Kim, James Turkson, <b>Ye Zou</b>, Yi Y Zuo, Rahul V Haware, Mahavir B Chougule, <a href="https://pubs.acs.org/doi/abs/10.1021/acs.molpharmaceut.6b00861">Factorial design based multivariate modeling and optimization of tunable bioresponsive arginine grafted poly (cystaminebis (carylamide)-diaminohexane) polymeric matrix based nanocarriers</a>. <i>Molecular Pharmaceutics</i>. 14.1 (2017): 252-263.</li></p>
+                        <p><li>Yachao Gao, <b>Ye Zou</b>, Yan Ma, Dan Wang, Ying Sun, Gang Ma, <a href="https://pubs.acs.org/doi/abs/10.1021/acs.langmuir.5b03616">Infrared probe technique reveals a millipede-like structure for A&beta; (8-28) amyloid fibril</a>. <i>Langmuir</i>. 32.4 (2016): 937-946.</li></p>
+                        <p><li>Chikara Otsubo, Sivakama Bharathi, Radha Uppala, Olga R llkayeva, Dongning Wang, Kevin McHugh, <b>Ye Zou</b>, Jieru Wang, John F Alcorn, Yi Y Zuo, Matthew D Hirschey, Eric S Goetzman, <a href="https://www.sciencedirect.com/science/article/pii/S002192582044726X">Long-chain acylcarnitines reduce lung function by inhibiting pulmonary surfactant</a>. <i>Journal of Biological Chemistry</i>. 290.39 (2015): 23897-23904.</li></p>
+                        <p><li><b>Ye Zou</b>, Wenying Hao, Haoyi Li, Yachao Gao, Ying Sun, Gang Ma, <a href="https://pubs.acs.org/doi/abs/10.1021/jp504201k">New insight into amyloid fibril formation of hen egg white lysozyme using a two-step temperature-dependent FTIR approach</a>. <i>The Journal of Physical Chemistry B</i>. 118.33 (2014), 9834-9843.</li></p>
+                        <p><li><b>Ye Zou</b>, Gang Ma, <a href="https://www.mdpi.com/1422-0067/15/6/10018">A new criterion to evaluate water vapor interference in protein secondary structural analysis by FTIR spectroscopy</a>. <i>International Journal of Molecular Sciences</i>. 15.6 (2014):10018-10033.</li></p>                            
+                        <p><li>Ying Sun, <b>Ye Zou</b>, Gang Ma, <a href="https://pubs.acs.org/doi/abs/10.1021/ed300788z">A convenient and cost-effective fourier transform infrared (FTIR) spectrometer purging setup for the undergraduate teaching laboratory</a>. <i>Journal of CHemical Education</i>. 90.7 (2013): 950-951.</li></p>
+                        <p><li><b>Ye Zou</b>, Yiyi Li, Wenying Hao, Xiaoqian Hu, Gang Ma, <a href="https://pubs.acs.org/doi/abs/10.1021/jp4003559">Parallel &beta;-sheet oligomer: new insights into amyloid formation of hen egg white lysozyme under heat and acidic condition from FTIR spectroscopy</a>. <i>The Journal of Physical Chemistry B</i>. 117.15 (2013): 4003-4013.</li></p> 
+                        <p><li>Gang Ma, Yiyi Li, Jun Dong, <b>Ye Zou</b>, <a href="https://www.sciencedirect.com/science/article/pii/S0924203112001944">The dynamic nature of incubation solution after cooling to room temperature in amyloid formation of hen egg white lysozyme: an FTIR assessment</a>. <i>Vibrational Spectroscopy</i>64 (2013):44-50.</li></p>                                               
                     </ul>
+            </div>
+
+            <div class="reference-wrapper">
+                <h3>Reference</h3>
+                <ul>
+                    <address>
+                        Dr. Ho Leung Ng<br>
+                        34 Chalmers Hall<br>
+                        Kansas State University<br>
+                        Manhattan, KS 66506<br>
+                        Email: hng@ksu.edu<br>
+                    </address>
+                </ul>
+
+                <ul>
+                    <address>
+                        Dr. Katsura Asano<br>
+                        258 Chalmers Hall<br>
+                        Kansas State University<br>
+                        Manhattan, KS 66506<br>
+                        Email: kasano@ksu.edu<br>
+                    </address>
+                </ul>
+
+                <ul>
+                    <address>
+                        Dr. Erika Geisbrecht<br>
+                        102 Burt Hall<br>
+                        Kansas State University<br>
+                        Manhattan, KS 66506<br>
+                        Email: geisbrechte@ksu.edu<br>
+                    </address>
+                </ul>
             </div>
 
             <div class="contact-wrapper">
@@ -112,6 +211,7 @@
                     </address>     
                 </ul>             
             </div>
+
 
             
                 
