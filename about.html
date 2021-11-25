@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Ye Zou | About</title>
+    <title>Ye | About</title>
     <link rel="shortcut icon" href="image/yes.png">
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <link rel="stylesheet" href="styles.css" />
@@ -16,8 +16,16 @@
                     <a href="index.html">Home</a>
                 </div>
 
+                <div class="nav-link-wrapper">
+                    <a href="research.html">Research</a>
+                </div>
+
                 <div class="nav-link-wrapper active-nav-link">
                     <a href="about.html">About</a>
+                </div>
+
+                <div class="nav-link-wrapper">
+                    <a href="Photos.html">Photos</a>
                 </div>
             </div>
 
@@ -85,80 +93,119 @@
                 </div>
             </div>
 
-            <div class="research-project-wrapper">
-                <h3>Projects</h3>
+            <div class="training-wrapper">
+                <h3>Professional Training</h3>
                 <ul>
-                    <li><h4>Proctolin and proctolin receptor study</h4></li>
-                    Neuropeptides functon as neurohormones, neurotransmitters or neuromodulators.
-                    Proctolin is a neuropeptide which is a small protein-like molecule. 
-                    It is a pentapeptide, RYLPT, involved in the stimulation of skeltal and visceral muscles contraction.
-                    Most neuropeptide receptors are seven transmembrane-domain, G protein-coupled receptors. 
-                    The proctolin receptor is also a G protein-coupled receptor (GPCR). 
-                    Due to the dynamic properties of GPCRs there are limited crystal structures available and there is no crystal structure of the proctolin receptor.
-                    Here, I used computational methods to reveal the mechanism of binding between proctolin and proctolin receptor.
+                    <p><img src="image/OSG_logo.png" alt="OSG" width="100" align="right" />
+                        <li><b><a href="https://opensciencegrid.org/events/OSG-Virtual-School/">Open Science Grid Virtual School 2021</a></b>
+                        - Held by the OSG</li></p>
+                    <ul>
+                        <li>The main concepts of High Throughput Computing (HTC)</li>
+                        <li>The basics of using HTCondor</li>
+                        <li>Getting started on OSG, a national distributed HTC infrastructure for Open Science</li>
+                        <li>How to prepare software for use in HTC systems</li>
+                        <li>Handling data (input and output) in HTC systems</li>
+                    </ul>
+                    <p><img src="image/SDSClogo.gif" alt="SDSC" width="100" align="right" />
+                        <li><b><a href="https://si19.sdsc.edu">SDSC Summer Institute 2019</a></b>
+                    - Held at the San Diego Supercomputer Center</a></li></p>
+                    <ul>
+                        <li>How to use Comet, interact with the job scheduler, understand strengths and weaknesses of the available filesystems and use Singularity containers to run different operating system</li>
+                        <li>Parallel programming with MPI/OpenMP, performance optimization, code profiling, GPU programming with CUDA and scientific visualization.</li>
+                        <li>Machine Learning, Big Data processing with Spark and parallel programming with Python</li>
+                        <li>Git/GitHub and workflow management with Kepler</li>
+                        
+                    </ul>
+                    <p><img src="image/smb.png" alt="smb" width="100" align="right" />
+                        <li><b><a href ="https://www-ssrl.slac.stanford.edu/rapidata/rapidata-2018/index.html">RapiData 2018: Data Collection and Structure Solving: A Practical Course in Macromolecular X-Ray Diffraction Measurment</a></b>
+                        - Held at the SLAC National Accelerator Laboratory</li></p>
+                    <ul>
+                        <img src="image/slacnal.png" alt="SLAC" width="100" align="right" />
+                        <li>Specimen preparation, tactics in data collection</li>
+                        <li>X-ray light sources</li>
+                        <li>X-ray detectors</li>
+                        <li>Data reduction</li>
+                        <li>Structure solving by MAD, SAD and Molecular replacement</li>
+                        <li>Complementary methods (spectroscopy and small angle scattering)</li>
+                    </ul>
 
-                    Focus was on using computational methods to study proctolin and proctolin receptor, 
-                    and using the results to design proctolin receptor mutants to investigate the binding mechanism.
-                    <p>(1) Based on the proctolin receptor protein sequence, the homology model was built by GPCR-I-TASSER.</p>
-                    <p>(2) The homology model was used to do docking study by Glide SP.</p>
-                    <p>(3) The preliminary results from Glide SP were used to do inducted fit docking.</p>
-                    <p>(4) The results from induced fit docking matching the experimental results were used to do QM-polarized ligand docking.</p>
-                    <p>(5) The top results were used to run MD simulations to further reveal the binding sites on the proctolin receptor. Then the binding sites were tested in lab.</p>
+                </ul>
+            </div>
+
+
+            <div class="software-wrapper">
+                <h3>Softwares</h3>
+                <ul>
+                    <p><li><b>Schrodinger Suite:</b></li></p>
+                    <ul>
+                        <li>Desmond: Molecular dynamics (MD) simulations, Metadynamics simulations</li>
+                        <li>Glide: Ligand dokcing, Induced fit docking, QM-polarized ligand docking, Covalent docking, Virtual screening workflow</li>
+                        <li>LigPrep</li>
+                        <li>Jaguar: Single point energy, pKa, QM conformer & tautomer predictor</li>
+                        <li>Structure prediction: Protein homology modeling</li>
+                        <li>Docking: Protein-protein docking, peptide docking</li>
+                    </ul>
                     
-                    <div class="two-column-wrapper">
-                        <div class="skill-wrapper">
-                            <dd><b>Skills</b></dd>
-                            <p><dd><li>homology modeling: GPCR-I-TASSER</li></dd></p>
-                            <p><dd><li>docking: Glide SP, Induced fit docking, QM-polarized ligand docking</li></dd></p>
-                            <p><dd><li>MD simulations: Amber, CHARMM GUI</li></dd></p>
-                            <p><dd><li>results analysis: CPPTRAJ</li></dd></p>
-                        </div>
-                        <div class="gpcr-wrapper">
-                            <img src="image/gpcr.png" style="height: 150px;">
-                            <img src="image/proctolin.png" style="height: 150px;">
-                        </div>
-                        
-                    </div>
+                    <p><li><b>Amber and AmberTool:</b></li></p>
+                    <ul>
+                        <li>tleap: system builder</li>
+                        <li>Pmemd: MD simulations, GPU accelerator (CUDA), Accelerated molecular dynamics</li>
+                        <li>MMPBSA: Calculate the binding erengies</li>
+                        <li>CPPTRAJ: MD simulations trajectory analysis</li>
+                    </ul>
                     
+                    <p><li><b>I-TASSER, GPCR-I-TASSER:</b> protein homology modeling</li></p>
+                    <p><li><b>Smina, Gnina:</b> ligand docking, virtural screening</li></p>
+                    <p><li><b>Autodock, AudoDockTools:</b> ligand preparation, ligand dokcing</li></p>
+                    <p><li><b>Pymol:</b> protein structure visualization</li></p>
+                    <p><li><b>ChimeraX, Chimera:</b> protein structure visualization</li></p>
+                    <p><li><b>VMD:</b> MD simulations trajectory analysis</li></p>
+                    <p><li><b>CHARMM-GUI:</b> MD system builder for the lipid bilayer</li></p>
+                    <p><li><b>YASARA:</b> Docking, MD simulations</li></p>
                     
-                    <li><h4>Red fluorescent protein conformational study</h4></li>
-                    <p>Focus on the study of dynamics of choromphores of fluorescent proteins. </p>
-                    <div class="two-column-wrapper">
-                        <div class="skill-wrapper">
-                            <dd><b>Skills</b></dd>
-                            <p><dd><li>pKa calculation: Jaguar</li></dd></p>
-                            <p><dd><li>MD simulations: Desmond</li></dd></p>
-                            <p><dd><li>Metadynamics simulations: Desmond</li></dd></p>
-                        </div>
-                        <div class="rfp-wrapper">
-                            <img src="image/rfp.png" style="height: 180px;">
-                        </div>
-                        
-                    </div>
-                    <li><h4>Formate dehydrogenase docking study</h4></li>
-                    <li><h4>Ferric-Catecholate simulation study</h4></li>
-                    
-                    <li><h4>ATP4 homology modleing study</h4></li>
-                    <p>This is a small contribution to <a href="http://opensourcemalaria.org">Open Source Malaria (OSM)</a>. Previous OSM used the traditional homology modeling method to build the homology model. 
-                        After the AlphaFold2 came out, we were trying to use the model of AlphaFold2 generated to keep studying ligands docking to ATP4.  </p>
-                    <p><a href="https://github.com/OpenSourceMalaria/Series4_PredictiveModel/files/7079673/YeZou_comparison_summary.pdf">The ATP4 homology models comparison</a></p>
-                    <p><a href="https://github.com/OpenSourceMalaria/Series4_PredictiveModel/issues/35">The discussion of AlphaFold2 model of ATP4</a></p>
+                </ul>
+            </div>
+
+            <div class="computer-skills-wrapper">
+                <h3>Computer skills</h3>
+                <ul>
+                    <p><li>Linux</li></p>
+                    <p><li>Bash</li></p>
+                    <p><li>Python</li></p>
+                    <p>- Numpy, Pandas, scikit-learn, Tensorflow, Pytorch</p>
+                    <p>- RDKit, OpenBabel</p>
+                </ul>
+            </div>
+
+            <div class="licenses-wrapper">
+                <h3>Licenses & certifications</h3>
+                <ul>
+                    <p><li><b>Malaria parasite detection using ensemble learning in Keras</b></li></p>
+                    <p><dd>Coursera | Credential ID 5KJBAWQ8AR94 | <a href="https://www.coursera.org/account/accomplishments/certificate/5KJBAWQ8AR94">See credential</a></dd></p>
+                    <p><li><b>Introduction to TensorFlow for Artifical Intelligence, Machine Learning, and Deep Learning</b></li></p>
+                    <p><dd>Coursera | Credential ID BA3DLUKNNGVD | <a href="https://www.coursera.org/account/accomplishments/certificate/BA3DLUKNNGVD">See credential</a></dd></p>
+                    <p><li><b>Structuring Machine Learning Projects</b></li></p>
+                    <p><dd>Coursera | Credential ID XTK2Y93UQKXD | <a href="https://www.coursera.org/account/accomplishments/certificate/XTK2Y93UQKXD">See credential</a></dd></p>
+                    <p><li><b>Improving Deep Neural Networks: Hyperparameter Tuning, Regularization and Optimization</b></li></p>
+                    <p><dd>Coursera | Credential ID YKD3ZECKV6RL | <a href="https://www.coursera.org/account/accomplishments/certificate/YKD3ZECKV6RL">See credential</a></dd></p>
+                    <p><li><b>Neural Networks and Deep Learning</b></li></p>
+                    <p><dd>Coursera | Credential ID LKJXEEXJUSXG | <a href="https://www.coursera.org/account/accomplishments/certificate/LKJXEEXJUSXG">See credential</a></dd></p>
                 </ul>
             </div>
 
             <div class="publications-wrapper">
                 <h3>Publications</h3>
                     <ul>
-                        <p><li>Chingakham Ranjit Singh, M Rebecca Glineburg, Chelsea Moore, Naoki Tani, Rahul Jaiswal, <b>Ye Zou</b>, Eric Aube, Sarah Gillaspie, Mackenzie Thornton, Ariana Cecil, Madelyn Hilgers, Azuma Takasu, Izumi Asano, Masayo Asano, Carlos R Escalante, Akira Nakamura, Peter K Todd, Katsura Asano, <a href="https://www.sciencedirect.com/science/article/pii/S2211124721007749">Human oncoprotein 5MP suppresses general and repeat-associated non-AUG translation via eIF3 by a common mechanism</a>. <i>Cell Reports</i>. 36(2), 109376.</li></p>
+                        <p><li>Chingakham Ranjit Singh, M Rebecca Glineburg, Chelsea Moore, Naoki Tani, Rahul Jaiswal, <b>Ye Zou</b>, Eric Aube, Sarah Gillaspie, Mackenzie Thornton, Ariana Cecil, Madelyn Hilgers, Azuma Takasu, Izumi Asano, Masayo Asano, Carlos R Escalante, Akira Nakamura, Peter K Todd, Katsura Asano, <a href="https://www.sciencedirect.com/science/article/pii/S2211124721007749">Human oncoprotein 5MP suppresses general and repeat-associated non-AUG translation via eIF3 by a common mechanism</a>. <i>Cell Reports</i>. 36.2 (2021), 109376.</li></p>
                         <p><li><b>Ye Zou</b>, John Ewalt, Ho-Leung Ng, <a href="https://www.mdpi.com/1422-0067/20/17/4237">Recent Insights from Molecular Dynamics Simulations for G Protein-Coupled Receptor Drug Discovery</a>. <i>International Journal of Molecular Sciences</i>. 20.17 (2019):4237. </li></p>
                         <p><li>Rongbing Yang, Kihoon Nam, Sung Wan Kim, James Turkson, <b>Ye Zou</b>, Yi Y Zuo, Rahul V Haware, Mahavir B Chougule, <a href="https://pubs.acs.org/doi/abs/10.1021/acs.molpharmaceut.6b00861">Factorial design based multivariate modeling and optimization of tunable bioresponsive arginine grafted poly (cystaminebis (carylamide)-diaminohexane) polymeric matrix based nanocarriers</a>. <i>Molecular Pharmaceutics</i>. 14.1 (2017): 252-263.</li></p>
                         <p><li>Yachao Gao, <b>Ye Zou</b>, Yan Ma, Dan Wang, Ying Sun, Gang Ma, <a href="https://pubs.acs.org/doi/abs/10.1021/acs.langmuir.5b03616">Infrared probe technique reveals a millipede-like structure for A&beta; (8-28) amyloid fibril</a>. <i>Langmuir</i>. 32.4 (2016): 937-946.</li></p>
                         <p><li>Chikara Otsubo, Sivakama Bharathi, Radha Uppala, Olga R llkayeva, Dongning Wang, Kevin McHugh, <b>Ye Zou</b>, Jieru Wang, John F Alcorn, Yi Y Zuo, Matthew D Hirschey, Eric S Goetzman, <a href="https://www.sciencedirect.com/science/article/pii/S002192582044726X">Long-chain acylcarnitines reduce lung function by inhibiting pulmonary surfactant</a>. <i>Journal of Biological Chemistry</i>. 290.39 (2015): 23897-23904.</li></p>
                         <p><li><b>Ye Zou</b>, Wenying Hao, Haoyi Li, Yachao Gao, Ying Sun, Gang Ma, <a href="https://pubs.acs.org/doi/abs/10.1021/jp504201k">New insight into amyloid fibril formation of hen egg white lysozyme using a two-step temperature-dependent FTIR approach</a>. <i>The Journal of Physical Chemistry B</i>. 118.33 (2014), 9834-9843.</li></p>
                         <p><li><b>Ye Zou</b>, Gang Ma, <a href="https://www.mdpi.com/1422-0067/15/6/10018">A new criterion to evaluate water vapor interference in protein secondary structural analysis by FTIR spectroscopy</a>. <i>International Journal of Molecular Sciences</i>. 15.6 (2014):10018-10033.</li></p>                            
-                        <p><li>Ying Sun, <b>Ye Zou</b>, Gang Ma, <a href="https://pubs.acs.org/doi/abs/10.1021/ed300788z">A convenient and cost-effective fourier transform infrared (FTIR) spectrometer purging setup for the undergraduate teaching laboratory</a>. <i>Journal of CHemical Education</i>. 90.7 (2013): 950-951.</li></p>
+                        <p><li>Ying Sun, <b>Ye Zou</b>, Gang Ma, <a href="https://pubs.acs.org/doi/abs/10.1021/ed300788z">A convenient and cost-effective fourier transform infrared (FTIR) spectrometer purging setup for the undergraduate teaching laboratory</a>. <i>Journal of Chemical Education</i>. 90.7 (2013): 950-951.</li></p>
                         <p><li><b>Ye Zou</b>, Yiyi Li, Wenying Hao, Xiaoqian Hu, Gang Ma, <a href="https://pubs.acs.org/doi/abs/10.1021/jp4003559">Parallel &beta;-sheet oligomer: new insights into amyloid formation of hen egg white lysozyme under heat and acidic condition from FTIR spectroscopy</a>. <i>The Journal of Physical Chemistry B</i>. 117.15 (2013): 4003-4013.</li></p> 
-                        <p><li>Gang Ma, Yiyi Li, Jun Dong, <b>Ye Zou</b>, <a href="https://www.sciencedirect.com/science/article/pii/S0924203112001944">The dynamic nature of incubation solution after cooling to room temperature in amyloid formation of hen egg white lysozyme: an FTIR assessment</a>. <i>Vibrational Spectroscopy</i>64 (2013):44-50.</li></p>                                               
+                        <p><li>Gang Ma, Yiyi Li, Jun Dong, <b>Ye Zou</b>, Zhihui Zhang, Ying Sun, <a href="https://www.sciencedirect.com/science/article/pii/S0924203112001944">The dynamic nature of incubation solution after cooling to room temperature in amyloid formation of hen egg white lysozyme: an FTIR assessment</a>. <i>Vibrational Spectroscopy</i>. 64 (2013):44-50.</li></p>                                               
                     </ul>
             </div>
 
@@ -170,7 +217,7 @@
                         34 Chalmers Hall<br>
                         Kansas State University<br>
                         Manhattan, KS 66506<br>
-                        Email: <a href="mailto:hng@ksu.edu">hng@ksu.edu</a>
+                        Email: <a href="hng@ksu.edu">hng@ksu.edu</a>
                     </address>
                 </ul>
 
@@ -180,7 +227,7 @@
                         258 Chalmers Hall<br>
                         Kansas State University<br>
                         Manhattan, KS 66506<br>
-                        Email: <a href="mailto:kasano@ksu.edu">kasano@ksu.edu</a>
+                        Email: <a href="kasano@ksu.edu">kasano@ksu.edu</a><br>
                     </address>
                 </ul>
 
@@ -190,7 +237,7 @@
                         102 Burt Hall<br>
                         Kansas State University<br>
                         Manhattan, KS 66506<br>
-                        Email: <a href="mailto:geisbrechte@ksu.edu">geisbrechte@ksu.edu</a>
+                        Email: <a href="geisbrechte@ksu.edu">geisbrechte@ksu.edu</a><br>
                     </address>
                 </ul>
             </div>
@@ -200,7 +247,7 @@
                 <ul>
                     <address>
                         Ye Zou<br>
-                        Chalmers Hall, Room 33<br>
+                        33 Chalmers Hall<br>
                         Kansas State University<br>
                         Manhattan, KS 66506<br>
                         Email: <a href="mailto:yezou@ksu.edu">yezou@ksu.edu</a>                    
